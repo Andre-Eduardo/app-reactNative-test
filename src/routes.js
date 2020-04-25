@@ -35,26 +35,5 @@ function Routes() {
     </NavigationContainer>
   );
 }
-// const Navigato = createStackNavigator(
-//   {
-//     Main: { screen: Main },
-//     User: { screen: User },
-//   },
-//   {
-//     initialRouteName: 'Main',
-//     defaultNavigationOptions: {
-//       gestureEnabled: false,
-//     },
-//   }
-// {
-//   headerLayoutPreset: 'center',
-//   headerBackTitleVisible: false,
-//   defaultNavigationOptions: {
-//     headerStyle: {
-//       backgrondColor: '#7159c1',
-//     },
-//     headerTintColor: '#fff',
-//   },
-// }
 
 export default Routes;
