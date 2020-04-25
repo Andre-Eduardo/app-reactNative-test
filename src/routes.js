@@ -31,6 +31,7 @@ function Routes() {
           component={Main}
           options={{ title: 'Main' }}
         />
+        <Stack.Screen name="User" component={User} />
       </Stack.Navigator>
     </NavigationContainer>
   );
