@@ -29,7 +29,6 @@ export default class Main extends Component {
   };
 
   async componentDidMount() {
-    console.tron.log(this.props);
     const users = await AsyncStorage.getItem('users');
     if (users) {
       this.setState({ users: JSON.parse(users) });
@@ -91,7 +90,6 @@ export default class Main extends Component {
 
         <List
           data={users}
-          KeyExtractor={(user) => user.login}
           renderItem={({ item }) => (
             <User>
               <Avatar source={{ uri: item.avatar }} />
@@ -102,6 +100,7 @@ export default class Main extends Component {
               </ProfileButton>
             </User>
           )}
+          KeyExtractor={(item) => item.id}
         />
       </Container>
     );
